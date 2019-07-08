@@ -10,4 +10,3 @@ def insertSort(arr):
 
 insertSort(arr)
 print(arr)
-print(len(arr)//2//2)

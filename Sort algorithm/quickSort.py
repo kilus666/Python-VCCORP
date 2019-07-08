@@ -1,34 +1,4 @@
-array=[12,3,4,5,7,3424,6,78,9,354,0,14,5,63,232]
-def quickSort(arr, first, last):
-    if first < last:
-        split = helper(arr, first, last)
 
-        quickSort(arr, first, split-1)
-        quickSort(arr, split+1, last)
-
-def helper(arr, first, last):
-    leftPointer= first+1
-    rightPointer= last 
-    pivot= arr[first]
-
-    while leftPointer < rightPointer:
-        if arr[leftPointer] < pivot:
-            leftPointer +=1
-        if arr[rightPointer] > pivot:
-            rightPointer -= 1
-        if arr[leftPointer] >pivot and arr[rightPointer]< pivot:
-            arr[leftPointer], arr[rightPointer]= arr[rightPointer], arr[leftPointer]
-            leftPointer +=1
-            rightPointer -=1
-    
-    arr[first], arr[rightPointer]= arr[rightPointer], arr[first]
-    return rightPointer
-
-quickSort(array, 0, len(array)-1)
-print(array)
-
-'''
-    
 def quickSort(alist):
    quickSortHelper(alist,0,len(alist)-1)
 
@@ -73,4 +43,7 @@ def partition(alist,first,last):
 array=[12,3,4,5,7,3424,6,78,9,354,0,14,5,63,232]
 quickSort(array)
 print(array)
-'''
+
+array=[12,3,4,5,7,3424,6,7,8]
+partition(array,0,len(array)-1)
+print(array)

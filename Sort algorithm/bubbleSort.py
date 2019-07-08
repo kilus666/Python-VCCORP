@@ -1,3 +1,7 @@
+
+
+# Sort given array by bubblesort
+# 
 arr= [12,232,4545,1,3,34,56,13,14,15]
 
 def bubbleSort(arr):
