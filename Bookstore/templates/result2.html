@@ -1,0 +1,16 @@
+<!-- templates/search.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="column is-4 is-offset-4">
+    <h3 class="title">Search result</h3>
+	<h4>Book List</h4>
+	<ul>
+	{% for book in Book_list %}
+  	<li>{{ book.BookID|e }}": "{{ book.Name|e }}": "{{ book.Category|e }}": "{{ book.Amount|e }}": "{{ book.Price|e }}": "{{ book.Cost|e }}</li>
+	{% endfor %}
+	</ul>
+
+</div>
+{% endblock %}
