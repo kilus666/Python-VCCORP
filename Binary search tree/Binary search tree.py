@@ -1,11 +1,15 @@
+
+# Create the node class
 class node:
     def __init__(self, value):
         self.value= value
         self.leftChild= None
         self.rightChild= None
 
+# Create tree class
+
 class binarySearchTree:
-    # Rooooooooot
+    # Set the rooooooooot
     def __init__(self, value= None):
         self.root= value
 
@@ -30,6 +34,7 @@ class binarySearchTree:
                 self._insertTree(value, currNode.rightChild)
         else: 
             print("This value is already in the tree")
+    
     # Print the all the value in sorted order
     def treePrint(self):
         if self.root !=None :
@@ -40,7 +45,7 @@ class binarySearchTree:
             self._treePrint(currNode.leftChild)
             print(currNode.value)
             self._treePrint(currNode.rightChild)
-
+   
     # Print heigh of the tree
     def height(self):
         if self.root!= None:
