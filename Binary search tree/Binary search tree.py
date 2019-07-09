@@ -82,8 +82,6 @@ class binarySearchTree:
             self.insertSort(sortedArr[mid:])
 
     
-
-
 # Create a random list of number
 import random
 import mergeSort as mS

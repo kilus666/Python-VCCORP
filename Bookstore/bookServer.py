@@ -2,7 +2,7 @@ import time
 import sqlite3
 import pickle
 import pandas as pd
-import schedule
+# import schedule
 from flask import Flask, jsonify, abort, make_response, request, render_template
 
 
@@ -413,21 +413,21 @@ def delete_book(userinput):
         return 'Bad request'
             
     
-if __name__=="__main__":
-    shopping_cart={}
-    bills={}
-    app.run(debug=True)
+# if __name__=="__main__":
+#     shopping_cart={}
+#     bills={}
+#     app.run(debug=True)
 
 
 
 
-# Sqlite.createDataBase()
-# A= category("pokemon adventure",2)
-# B= category("test Pokemon", 1)
-# Book1= book("pokemon",(1,2),12,12,8)
-# book.addBookHelper(Book1)
-# category.addCategoryHelper(A)
-# category.addCategoryHelper(B)
+Sqlite.createDataBase()
+A= category("pokemon adventure",2)
+B= category("test Pokemon", 1)
+Book1= book("pokemon",(1,2),12,12,8)
+book.addBookHelper(Book1)
+category.addCategoryHelper(A)
+category.addCategoryHelper(B)
 # conn= sqlite3.connect("BookStore.db")
 # with conn:
 #     c= conn.cursor()
